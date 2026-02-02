@@ -1,0 +1,108 @@
+:root{
+    --text:#45455B;
+    --backg:#F9F6E5;
+    --header:#2b313F;
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#pageWrapper{
+    width:95%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    background-color: var(--backg);
+    box-shadow: 0 0 15px var(--header)
+}
+#nav-main{
+    display:flex;
+}
+header{
+    padding-left:2%;
+    background-color: var(--header);
+    box-shadow: 0 0 5px var(--header);
+    color:var(--backg);
+    display:flex;
+    align-items: center;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+nav ul{
+    height:100%;
+    list-style: none;
+    padding:unset;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+nav ul li a{
+    display:inline-block;
+    width:100%;
+    padding-bottom:2%;
+    border-bottom:4px solid var(--header);
+    text-decoration: none;
+    &:visited,
+    &:link{
+        color: var(--text);
+    }
+}
+main{
+    width:80%;
+    padding:2%;
+}
+main section{
+    width:100%;
+    height:100%;
+}
+@media screen and (max-width:750px){
+    #nav-main{
+        flex-direction: column;
+    }
+    header{
+        justify-content: center;
+    }
+    nav{
+        width:100%;
+    }
+    nav ul{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        /* repeat function takes the number of times to make the column, which can be also auto-fill */
+        font-size: calc(12px + 1vw);
+    }
+    nav ul li a{
+        margin:2%;
+        border:none;
+        display:flex;
+        width:100%;
+        justify-content: center;
+        border-bottom:solid 5px var(--header);
+    }
+    main{
+        width:100%;
+        height:100%;
+    }
+}

@@ -1,0 +1,31 @@
+#sec1{
+    display:flex;
+    flex-direction: column;
+}
+#sec1 > *{
+    margin:auto;
+}
+#sec1 h1{
+    text-align: center;
+}
+#intro{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+#intro img{
+    display:block;
+    max-width:25%;
+    height:auto;
+}
+#intro h3{
+    padding:2%;
+    display:flex;
+    justify-content: center;
+}
+@media screen and (max-width:750px){
+    #intro{
+        flex-direction: column;
+        align-items: center;
+    }
+}

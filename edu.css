@@ -1,0 +1,12 @@
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section > *{
+    padding-left:2%;
+    border-left:solid 5px #2b313F;
+}
+section > * > p{
+    font-weight: 700;
+}

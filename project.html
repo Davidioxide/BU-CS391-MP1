@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="template.css">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <title>Project | Dave</title>
+    </head>
+    <body>
+        <div id="pageWrapper">
+            <header>
+                <div>
+                    <h1>Dave Feng</h1>
+                    <p>A miserable college student</p>
+                </div>
+            </header>
+            <div id="nav-main">
+                <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="edu.html">Education</a></li>
+                            <li><a href="emp.html">Employment</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="doc.html">Document</a></li>
+                        </ul>
+                    </nav>
+                <main>
+                    <section>
+                        <div id="calculator">
+                            <input type="text" id="first" placeholder="first input">
+                            <input type="text" id="second" placeholder="second input">
+                            <div id="operations">
+                                <button onclick="plus()">+</button>
+                                <button onclick="minus()">-</button>
+                                <button onclick="times()">*</button>
+                                <button onclick="divide()">/</button>
+                                <button onclick="power()">^</button>
+                            </div>
+                            <div id="result">
+
+                            </div>
+                            <button id="clear" onclick="cclear()">clear</button>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <footer>
+                <p>All rights reserved by <a href="#">Dave Feng &#169;</a></p>
+            </footer>
+        </div>
+        <script src="project.js"></script>
+    </body>
+</html>
