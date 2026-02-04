@@ -11,14 +11,13 @@
 }
 body{
     width:100vw;
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 #pageWrapper{
     width:95%;
-    height:100%;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 10fr 1fr;
@@ -45,7 +44,7 @@ nav{
     width:20%;
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     font-size: 1.2em;
 }
 nav ul{
