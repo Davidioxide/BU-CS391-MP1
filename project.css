@@ -15,9 +15,20 @@ section{
     width:100%;
     height:calc(100% / 5);
 } 
-#calculator input{
-    padding-left:2%;
+#calculator .input{
+    font-size: calc(6px + 1vw);
+    display:flex;
+    width:100%;
+    justify-content: space-between;
     background-color: transparent;
+    align-items: center;
+}
+#calculator .input input{
+    min-width: 60%;
+    max-width: 70%;
+}
+#calculator div input{
+    height:100%;
 }
 #operations{
     display:flex;
